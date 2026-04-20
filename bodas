@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bodas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="index.html">Inicio</a>
+  <a href="salon.html">Salón</a>
+  <a href="bodas.html">Bodas</a>
+  <a href="eventos.html">Eventos</a>
+  <a href="catering.html">Catering</a>
+</nav>
+
+<section class="section">
+<h1>Bodas</h1>
+
+<div class="gallery">
+<img src="boda1.jpeg">
+<img src="boda2.jpeg">
+<img src="boda9.jpeg">
+</div>
+
+</section>
+
+</body>
+</html>
