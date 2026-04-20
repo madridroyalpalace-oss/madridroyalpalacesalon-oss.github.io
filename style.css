@@ -5,29 +5,24 @@ html, body {
   scroll-behavior: smooth;
   background: #0e0e0e;
   color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 /* NAV */
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  box-sizing: border-box;
-
   padding: 25px 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
   z-index: 1000;
-  color: white;
 }
 
 .nav a {
   color: white;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 20px;
   font-size: 12px;
   letter-spacing: 2px;
 }
@@ -39,10 +34,10 @@ html, body {
 }
 
 .video {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
 }
 
 .overlay {
@@ -54,39 +49,29 @@ html, body {
 
 .hero-content {
   position: relative;
-  z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 6rem;
-  margin: 0;
-}
-
-.hero-content p {
-  font-size: 14px;
-  letter-spacing: 3px;
+  font-size: 5rem;
 }
 
 /* SECCIONES */
 .section {
-  padding: 100px 8%;
+  padding: 140px 8%;
   text-align: center;
 }
 
-.section h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin-bottom: 50px;
+.dark {
+  background: #0a0a0a;
 }
 
-/* GALERÍA ESTILO ESTUDIO */
+/* GALERÍA */
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -97,66 +82,29 @@ html, body {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  transition: 0.5s ease;
 }
 
-.gallery img:hover {
-  transform: scale(1.02);
-}
-.contact {
-  padding: 140px 8%;
-  text-align: center;
-  background: #0e0e0e;
-}
-
-.contact h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin-bottom: 30px;
-  font-weight: 400;
-}
-
-.contact p {
-  font-size: 14px;
-  letter-spacing: 1px;
-  color: #cfcfcf;
-  margin: 8px 0;
-}
-
-/* CONTENEDOR REDES */
-.socials {
-  margin-top: 40px;
+/* STATS */
+.numbers {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 40px;
 }
 
-/* LINKS REDES */
-.socials a {
+/* CONTACTO */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: 1px solid white;
   color: white;
   text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 2px;
-  position: relative;
-  transition: 0.3s ease;
 }
 
-.socials a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 1px;
-  background: white;
-  transition: 0.3s ease;
-}
-
-.socials a:hover::after {
-  width: 100%;
-}
-
-.socials a:hover {
-  opacity: 0.7;
+/* FOOTER */
+.footer {
+  padding: 120px 8%;
+  text-align: center;
+  background: black;
 }
