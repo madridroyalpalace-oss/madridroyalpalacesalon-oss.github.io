@@ -3,8 +3,10 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background: #0e0e0e;
-  color: #fff;
+
+  background: #e7e1d6;
+  color: #2b2b2b;
+
   font-family: 'Inter', sans-serif;
 }
 
@@ -13,16 +15,28 @@ html, body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 25px 50px;
+  padding: 25px 60px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
+
   z-index: 1000;
+  background: rgba(231, 225, 214, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  position: absolute;
+  left: 60px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #b08d57;
 }
 
 .nav a {
-  color: white;
+  color: #b08d57;
   text-decoration: none;
-  margin-left: 20px;
   font-size: 12px;
   letter-spacing: 2px;
 }
@@ -44,7 +58,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.3);
 }
 
 .hero-content {
@@ -58,7 +72,9 @@ html, body {
 
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
+  font-style: italic;
   font-size: 5rem;
+  color: #b08d57;
 }
 
 /* SECCIONES */
@@ -68,19 +84,35 @@ html, body {
 }
 
 .dark {
-  background: #0a0a0a;
+  background: #ded7cb;
+}
+
+.section h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #b08d57;
+  font-size: 3rem;
+}
+
+.desc {
+  max-width: 700px;
+  margin: 20px auto 50px;
+  color: #4a4a4a;
+  line-height: 1.6;
 }
 
 /* GALERÍA */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .gallery img {
   width: 100%;
-  height: 500px;
+  height: 380px;
   object-fit: cover;
 }
 
@@ -92,13 +124,13 @@ html, body {
   margin-top: 40px;
 }
 
-/* CONTACTO */
+/* BOTÓN */
 .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #b08d57;
+  color: #b08d57;
   text-decoration: none;
 }
 
@@ -106,5 +138,36 @@ html, body {
 .footer {
   padding: 120px 8%;
   text-align: center;
-  background: black;
+  background: #111;
+  color: white;
+}
+
+.footer h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #b08d57;
+}
+
+.footer-links a {
+  color: #b08d57;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.copy {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* ANIMACIÓN ESTUDIO */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
