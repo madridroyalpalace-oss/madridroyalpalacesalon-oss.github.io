@@ -1,18 +1,26 @@
-body {
+html, body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: #fff;
-  color: #111;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #0e0e0e;
+  color: #fff;
 }
 
-/* NAV PREMIUM */
+/* NAV */
 .nav {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 30px 60px;
+  box-sizing: border-box;
+
+  padding: 25px 50px;
   display: flex;
   justify-content: space-between;
-  z-index: 10;
+  align-items: center;
+
+  z-index: 1000;
   color: white;
 }
 
@@ -24,7 +32,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* HERO CINEMÁTICO */
+/* HERO */
 .hero {
   height: 100vh;
   position: relative;
@@ -52,14 +60,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
 }
 
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
   font-size: 6rem;
-  font-weight: 500;
   margin: 0;
 }
 
@@ -68,43 +74,32 @@ body {
   letter-spacing: 3px;
 }
 
-/* SECCIONES LUXURY */
+/* SECCIONES */
 .section {
-  padding: 180px 10%;
+  padding: 100px 8%;
   text-align: center;
 }
 
 .section h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  font-weight: 400;
-  margin-bottom: 60px;
+  font-size: 3rem;
+  margin-bottom: 50px;
 }
 
-/* GALERÍA EDITORIAL */
+/* GALERÍA ESTILO ESTUDIO */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .gallery img {
   width: 100%;
-  height: 700px;
+  height: 500px;
   object-fit: cover;
-}
-
-/* HOVER SUAVE */
-.gallery img {
-  transition: 0.6s ease;
+  transition: 0.5s ease;
 }
 
 .gallery img:hover {
   transform: scale(1.02);
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
