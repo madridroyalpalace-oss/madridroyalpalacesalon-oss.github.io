@@ -103,3 +103,60 @@ html, body {
 .gallery img:hover {
   transform: scale(1.02);
 }
+.contact {
+  padding: 140px 8%;
+  text-align: center;
+  background: #0e0e0e;
+}
+
+.contact h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.contact p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #cfcfcf;
+  margin: 8px 0;
+}
+
+/* CONTENEDOR REDES */
+.socials {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* LINKS REDES */
+.socials a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.socials a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 1px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+.socials a:hover::after {
+  width: 100%;
+}
+
+.socials a:hover {
+  opacity: 0.7;
+}
