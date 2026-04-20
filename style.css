@@ -1,15 +1,15 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background: #fff;
   color: #111;
 }
 
-/* NAV */
+/* NAV PREMIUM */
 .nav {
   position: fixed;
-  top: 0;
   width: 100%;
-  padding: 25px 60px;
+  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
   z-index: 10;
@@ -19,28 +19,29 @@ body {
 .nav a {
   color: white;
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 13px;
+  margin-left: 25px;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
-/* HERO */
+/* HERO CINEMÁTICO */
 .hero {
   height: 100vh;
   position: relative;
 }
 
 .video {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
 }
 
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.35);
 }
 
 .hero-content {
@@ -57,36 +58,47 @@ body {
 
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 5rem;
+  font-size: 6rem;
+  font-weight: 500;
   margin: 0;
 }
 
-/* SECCIONES */
+.hero-content p {
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+/* SECCIONES LUXURY */
 .section {
-  padding: 120px 10%;
+  padding: 180px 10%;
   text-align: center;
 }
 
 .section h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  margin-bottom: 40px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 
-/* GALERÍA */
+/* GALERÍA EDITORIAL */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
 
 .gallery img {
   width: 100%;
-  height: 320px;
+  height: 700px;
   object-fit: cover;
-  transition: 0.4s;
+}
+
+/* HOVER SUAVE */
+.gallery img {
+  transition: 0.6s ease;
 }
 
 .gallery img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
